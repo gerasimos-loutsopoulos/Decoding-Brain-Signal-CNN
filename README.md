@@ -1,1 +1,1 @@
-# Decoding-Brain-Signal-CNN
+# Decoding-Brain-Signal-Convolutional Neural Networks (CNN)
