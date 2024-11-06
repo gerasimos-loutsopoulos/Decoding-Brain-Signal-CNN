@@ -67,8 +67,12 @@ Confusion matrices are generated for each subject, providing insight into classi
 The script will output performance metrics and generate confusion matrix heatmaps for each subject. The average metrics across subjects will be printed at the end.
 
 ## Authors 
-- Gerasimos Loutsopoulos- Initial work- [Gerasimos Loutsopoulos](https://github.com/gerasimos-loutsopoulos).
+- Gerasimos Loutsopoulos- Initial work- [Gerasimos Loutsopoulos](https://github.com/gerasimos-loutsopoulos)
 
-## Acknowledgments
+## License
 
-Stanford University providing the [EEG Dataset](https://purl.stanford.edu/bq914sc3730)
+This project uses a publicly available [EEG Dataset](https://purl.stanford.edu/bq914sc3730) provided by Stanford University. Please refer to Stanford's terms of use for the dataset if you plan to reuse or redistribute it. The dataset's terms can typically be found on the source website or associated publication.
+
+## License
+
+This code is proprietary to Gerasimos Loutsopoulos and Stockholm University and is intended solely for academic purposes. Unauthorized reproduction, distribution, or commercial use is prohibited without prior written permission. For inquiries, please contact [g.loutsopoulos@gmail.com]
