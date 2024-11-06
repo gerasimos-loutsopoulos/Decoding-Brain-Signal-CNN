@@ -13,8 +13,8 @@ Electroencephalography (EEG) is a widely used non-invasive technique to monitor 
 
 The dataset comprises EEG signals from multiple subjects, with data stored in MATLAB files (.mat format). Each file corresponds to a subject and contains:
 
-*X_3D: A 3-dimensional array of EEG signal data.
+- X_3D: A 3-dimensional array of EEG signal data.
 
-*categoryLabels: Labels for each EEG trial.
+- categoryLabels: Labels for each EEG trial.
 
 Each file includes up to 5184 EEG trials. During the data loading process, only the first 5184 trials are used to ensure consistency across subjects.
