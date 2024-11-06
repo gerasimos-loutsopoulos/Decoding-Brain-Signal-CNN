@@ -58,20 +58,6 @@ The results are averaged across all subjects to evaluate the model's overall per
 Confusion matrices are generated for each subject, providing insight into classification accuracy for individual categories. Custom labels (HB, HF, AB, AF, FV, IO) are used to represent different EEG signal categories in the confusion matrix plots.
 
 
-## How to Run
-
-1 Clone the repository.
-2 Ensure the MATLAB files (S1.mat, S2.mat, etc.) are in the same directory.
-3 Run the main script to initiate model training and evaluation.
-
-  ```bash
-  python main_script.py
-  ```
-
-
-## Expected Output
-
-The script will output performance metrics and generate confusion matrix heatmaps for each subject. The average metrics across subjects will be printed at the end.
 
 ## Authors 
 - Gerasimos Loutsopoulos- Initial work- [Gerasimos Loutsopoulos](https://github.com/gerasimos-loutsopoulos)
