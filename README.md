@@ -9,6 +9,13 @@ For more details about the data collection methodology, experimental setup, and 
 
 Electroencephalography (EEG) is a widely used non-invasive technique to monitor electrical activity in the brain. Traditionally, EEG data is highly dimensional and requires extensive preprocessing for effective classification. This project addresses that challenge by leveraging CNNs a class of deep learning models particularly well-suited for feature extraction from high-dimensional data to operate directly on raw EEG data, eliminating the need for traditional preprocessing steps.
 
+## Requirements
+
+- Python (version 3.10.12)
+- NumPy (version 1.26.4)
+- Scikit-learn (version 1.4.2)
+- Matplotlib (version 3.5.1)
+
 ## Variables contained in each Matlab file:
 
 The dataset comprises EEG signals from multiple subjects, with data stored in MATLAB files (.mat format). Each file corresponds to a subject and contains:
