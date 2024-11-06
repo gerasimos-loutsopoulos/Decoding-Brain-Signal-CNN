@@ -25,6 +25,32 @@ The dataset comprises EEG signals from multiple subjects, with data stored in MA
 - X_3D: The 3D EEG data matrix is a 3-dimensional electrodes-by-time-by-trial matrix of size 124-by-32-by-T. 
 Each slice of X_3D along the trial dimension represents one experimental trial. Trial labels are corresponding elements in the exemplarLabels and categoryLabels vectors. This form of the EEG data allows for easier subsetting by time and space.
 
+## Model Architecture 
+
+The model is a sequential CNN with several convolutional, batch normalization, activation, and dropout layers designed to capture intricate patterns in the EEG data. Key layers and parameters include:
+
+- Batch Normalization layers to normalize inputs, accelerating training and improving stability.
+- Conv2D layers with various kernel sizes and constraints for effective feature extraction.
+- SeparableConv2D layer to reduce the model's parameter count while maintaining classification accuracy.
+- Fully Connected (Dense) output layer with a softmax activation for multiclass classification.
+
+## Training and Evaluation 
+
+Each subject's data is split into training and testing sets (80/20 split). The model is trained separately for each subject using early stopping to avoid overfitting. After training, performance metrics are computed for each subject, including:
+
+- Confusion Matrix
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+
+The results are averaged across all subjects to evaluate the model's overall performance.
+
+## Result Visualization
+
+Confusion matrices are generated for each subject, providing insight into classification accuracy for individual categories. Custom labels (HB, HF, AB, AF, FV, IO) are used to represent different EEG signal categories in the confusion matrix plots.
+
+
 ## How to Run
 
 1 Clone the repository.
@@ -39,3 +65,10 @@ Each slice of X_3D along the trial dimension represents one experimental trial. 
 ## Expected Output
 
 The script will output performance metrics and generate confusion matrix heatmaps for each subject. The average metrics across subjects will be printed at the end.
+
+## Authors 
+- Gerasimos Loutsopoulos- Initial work- [Gerasimos Loutsopoulos](https://github.com/gerasimos-loutsopoulos).
+
+## Acknowledgments
+
+Stanford University providing the [EEG Dataset](https://purl.stanford.edu/bq914sc3730)
